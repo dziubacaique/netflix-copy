@@ -1,3 +1,42 @@
+/*declaração de váriaveis no css, utiliza-se o root*/
+:root { 
+    --vermelho: #E50914; 
+    --preta: #141414;
+}
+
+/* reset - remove as bordas inciais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: blue;
+    background: var(--preta); /*aplicação da variavel para definir a cor de fundo da página */
+    font-family: 'Times New Roman', Times, serif; /* Fontes da Pagina */
+
+}
+
+header .container{
+    display: flex; /*alinha os elementos na tela*/
+    flex-direction: row;
+    align-items: center; /* alinha de maneira vertiical */
+    justify-content: space-between; /*cria espaços entre as tags */
+
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times; /* A fonte entre '' é a principal, e após a virgula utiliza-se uma reserva, caso a primeira falhe */
+    font-size: 40px;
+}
+
+header nav a { /*configura todas as <a> dentro da <nav> */
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover { /*:hover altera as informações das <a> quando colocar o mouse em cima */ 
+    color: #fff;
 }
