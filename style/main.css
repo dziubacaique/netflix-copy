@@ -14,7 +14,7 @@
 /*Elementos Base*/
 body {
     background: var(--preta); /*aplicação da variavel para definir a cor de fundo da página */
-    font-family: 'Times New Roman', Times, serif; /* Fontes da Pagina */
+    font-family: 'Arial', Times, serif; /* Fontes da Pagina */
     color: white;
 }
 
@@ -101,4 +101,8 @@ header nav a:hover { /*:hover altera as informações das <a> quando colocar o m
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
