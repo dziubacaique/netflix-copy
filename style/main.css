@@ -127,7 +127,6 @@ header .navibarLateral {
     display: block;
 }
 
-
 header .logo {
     color: var(--vermelho);
     font-family: 'Arial Black', Times; /* A fonte entre '' é a principal, e após a virgula utiliza-se uma reserva, caso a primeira falhe */
@@ -250,4 +249,14 @@ header nav a:hover { /*:hover altera as informações das <a> quando colocar o m
 
 .carrosel-filmes{   
     margin-top: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 15%;
+    align-items: center;
 }
