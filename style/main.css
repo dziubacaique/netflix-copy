@@ -14,7 +14,7 @@
 /*Elementos Base*/
 body {
     background: var(--preta); /*aplicação da variavel para definir a cor de fundo da página */
-    font-family: 'Arial', Times, serif; /* Fontes da Pagina */
+    font-family: 'Netflix Sans', Times, serif; /* Fontes da Pagina */
     color: white;
 }
 
@@ -131,7 +131,7 @@ header nav a:hover { /*:hover altera as informações das <a> quando colocar o m
 
 /*Filme Principal*/
 .filme-principal{
-    font-size: 16px;
+    font-size: 25px;
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('/img/wallpaper2-fringe.jpg');
     
     height: 800px;
@@ -144,48 +144,87 @@ header nav a:hover { /*:hover altera as informações das <a> quando colocar o m
 }
 
 .filme-principal .descricao{
-    margin-top: 10px;
+    margin-top: 40px;
     margin-bottom: 40px;
+    color: #f5f5f5;
 }
 
 .filme-principal .titulo {
-    margin-top: 15%;
-    font-size: 40px;
+    margin-top: 12%;
+    margin-bottom: 100px;
+    font-size: 50px;
     font-family:'Trebuchet MS', Arial, sans-serif;
 }
 
 .botao{
-    background-color: rgba(0, 0, 0, .50);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 15px 40px; /*lida com espaço interno do elemento (box)  - 1 valor pega os 4 lados, 2 valores pega inicialmente cima e baixo, e o segundo valor direita e esquerda*/
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    
+    cursor:pointer;
+    transition: 0.5s ease all;
+}
+
+.botao2 {
+    background-color: rgba(88, 88, 88, 0.5);
     border: none;
     color: white;
-
-    padding: 15px 30px; /*lida com espaço interno do elemento (box)  - 1 valor pega os 4 lados, 2 valores pega inicialmente cima e baixo, e o segundo valor direita e esquerda*/
+    border-radius: 10px;
+    padding: 15px 40px; /*lida com espaço interno do elemento (box)  - 1 valor pega os 4 lados, 2 valores pega inicialmente cima e baixo, e o segundo valor direita e esquerda*/
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 20px;
+    font-weight: bold;
 
     cursor:pointer;
-    transition: 3s ease all;
+    transition: 0.5s ease all;
 }
 
 .botao:hover{
-    background-color: white;
+    background-color: rgb(201, 199, 199);
     color: black;
+}
+
+.botao2:hover{
+    background-color: rgba(73, 73, 73, 0.226);
+    color: white;
 }
 
 .botao i{
     margin-right: 7px;
 }
 
-.container {
-    margin-left: 20px;
+.botao2 i{
+    margin-right: 7px;
 }
+
+.container {
+    margin-left: 60px;
+    
+}
+
 
 .filme-principal .container {
     width: 60%;
 }
 
+.names_owl {
+    font-family: 'Netflix Sans', Times, serif; /* Fontes da Pagina */
+    font-size: 1.4vw;
+    line-height: 1.25vw;
+    font-weight: 700;
+    margin: 10px 0 10px 40px;
+    align-items: center;
+    color: #f5f5f5;
+    
+}
+
 .box-filme{
-    margin-left: 20px;
+    margin-left: 5px;
     height: 100%;
     width: 100%;
     display: block;
