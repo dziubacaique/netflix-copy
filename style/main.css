@@ -11,10 +11,11 @@
     box-sizing: border-box;
 }
 
+/*Elementos Base*/
 body {
     background: var(--preta); /*aplicação da variavel para definir a cor de fundo da página */
     font-family: 'Times New Roman', Times, serif; /* Fontes da Pagina */
-
+    color: white;
 }
 
 header .container{
@@ -39,4 +40,26 @@ header nav a { /*configura todas as <a> dentro da <nav> */
 
 header nav a:hover { /*:hover altera as informações das <a> quando colocar o mouse em cima */ 
     color: #fff;
+}
+
+/*Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('/img/wallpaper-fringe.jpg');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex; /*joga tudo em linha*/
+    flex-direction: column; /*substitui para coluna*/
+    justify-content: center;
+    align-items: flex-start; /*começa da esquerda*/
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
 }
