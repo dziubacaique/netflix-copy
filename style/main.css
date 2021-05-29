@@ -30,8 +30,87 @@ header .container{
     flex-direction: row;
     align-items: center; /* alinha de maneira vertiical */
     justify-content: space-between; /*cria espaços entre as tags */
-    
+}
 
+header .navibar {
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+header .navibarLateral {
+    padding-inline-end: 150px;
+    flex-direction: row;
+    margin-inline-start: auto;
+}
+
+.avatar {
+    display: flex;
+    width: 30px;
+}
+
+.navibarLateral > li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.navibarLateral > li > ul {
+    border: 1px solid lightgray;
+    background: rgb(0, 0, 0);  
+    padding: 0; 
+    margin: 0;
+    position:absolute;
+    left: 0;  
+    display: none;
+}
+
+
+.navibarLateral > li > ul > li {
+    white-space:nowrap;
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.navibarLateral > li > ul > ul {
+    border: 1px solid lightgray;
+    white-space: nowrap;
+    list-style: none;
+    font-size: 16px;
+}
+
+.navibarLateral > li >  ul > ul > li > a{
+    background: rgb(0, 0, 0);
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    transition: all 0.2s;
+}
+
+.navibarLateral > li > ul > li > a {
+    background: rgb(0, 0, 0);
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.navibarLateral > li > ul > ul > li > a:hover {
+    background: #333;
+    color: white;
+}
+
+.navibarLateral > li > ul > li > a:hover {
+    background: #333;
+    color: white;
+}
+
+.navibarLateral > li:hover > ul {
+    display: block;
+    
 }
 
 header .logo {
@@ -44,7 +123,6 @@ header nav a { /*configura todas as <a> dentro da <nav> */
     text-decoration: none;
     color: #AAA;
     margin-right: 10px;
-    
 }
 
 header nav a:hover { /*:hover altera as informações das <a> quando colocar o mouse em cima */ 
@@ -107,6 +185,7 @@ header nav a:hover { /*:hover altera as informações das <a> quando colocar o m
 }
 
 .box-filme{
+    margin-left: 20px;
     height: 100%;
     width: 100%;
     display: block;
