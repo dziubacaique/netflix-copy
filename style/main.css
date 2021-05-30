@@ -30,6 +30,10 @@ header .container{
     flex-direction: row;
     align-items: center; /* alinha de maneira vertiical */
     justify-content: space-between; /*cria espaços entre as tags */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header .navibar {
@@ -138,18 +142,18 @@ header nav a { /*configura todas as <a> dentro da <nav> */
     align-items: center;
     flex-direction: row;
     text-decoration: none;
-    color: #AAA;
+    color: rgb(255, 255, 255);
     margin-right: 10px;
 }
 
 header nav a:hover { /*:hover altera as informações das <a> quando colocar o mouse em cima */ 
-    color: #fff;
+    color: rgb(194, 194, 194);
 }
 
 /*Filme Principal*/
 .filme-principal{
     font-size: 25px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('/img/wallpaper2-fringe.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('../img/wallpaper2-fringe.jpg');
     
     height: 800px;
     background-size: cover;
