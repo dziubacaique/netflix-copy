@@ -30,7 +30,7 @@ header .container{
     flex-direction: row;
     align-items: center; /* alinha de maneira vertiical */
     justify-content: space-between; /*cria espaços entre as tags */
-    overflow: hidden;
+    
     position: fixed;
     top: 0;
     width: 100%;
